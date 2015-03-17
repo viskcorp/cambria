@@ -1,0 +1,5 @@
+<script type='text/javascript'>
+//<![CDATA[
+function removeHtmlTag(b,a){if(b.indexOf("<")!=-1){var d=b.split("<");for(var c=0;c<d.length;c++){if(d[c].indexOf(">")!=-1){d[c]=d[c].substring(d[c].indexOf(">")+1,d[c].length)}}b=d.join("")}a=(a<b.length-1)?a:b.length-2;while(b.charAt(a-1)!=" "&&b.indexOf(" ",a)!=-1){a++}b=b.substring(0,a-1);return b+"..."}function createSummaryAndThumb(d){var f=document.getElementById(d);var a="";var b=f.getElementsByTagName("img");if(b.length<=0){a='<span style="float:left; padding:5px 10px 5px 0;"><img src="http://1.bp.blogspot.com/-6nri2N1r1fY/TmTUW9pOStI/AAAAAAAAATw/a0kJJE9Sx_I/s400/Logo+ViskCorp+%25284%2529.png" width="'+img_thumb_width+'px" height="'+img_thumb_height+'px"/></span>';var e=summary_noimg}if(b.length>=1){a='<span style="float:left; padding:5px 10px 5px 0px;"><img src="'+b[0].src+'" width="'+img_thumb_width+'px" height="'+img_thumb_height+'px"/></span>';e=summary_img}var c=a+"<div>"+removeHtmlTag(f.innerHTML,e)+"</div>";f.innerHTML=c};
+//]]>
+</script>
